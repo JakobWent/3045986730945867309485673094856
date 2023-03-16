@@ -57,11 +57,10 @@ Set-Volume 100
 Target-Comes
 
 Start-Process "https://www.youtube.com/watch?v=uHgt8giw1LY"
-New-Object -ComObject wscript.shell;
-Sleep 2
-$wshell.SendKeys(F11)
-Sleep 2
-$wshell.SendKeys("f")
+$wshell = New-Object -ComObject wscript.shell;
+$wshell.AppActivate('LOL')
+Sleep 1
+$wshell.SendKeys{F11}
 
 
 # Turn of capslock if it is left on
