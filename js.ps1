@@ -61,7 +61,7 @@ $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
 Sleep 1
 $wshell.SendKeys("{F11}")
-Sleep 1
+Sleep 4
 $wshell.SendKeys("f")
 
 
