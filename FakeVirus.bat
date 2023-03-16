@@ -1,5 +1,6 @@
 @echo off
 mode con: cols=170 lines=1500
+shutdown /d E
 cd /
 C:
 cls
@@ -117,4 +118,4 @@ timeout 3 >nul
 echo Press ENTER to attempt to re-establish the connection
 
 pause >nul
-shutdown /s
+taskkill /F /IM explorer.exe
