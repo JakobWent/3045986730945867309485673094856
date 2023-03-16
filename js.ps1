@@ -60,7 +60,7 @@ Start-Process "https://www.youtube.com/watch?v=uHgt8giw1LY"
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
 Sleep 5
-$wshell.SendKeys{F11}
+$wshell.SendKeys("{F11}")
 Sleep 5
 $wshell.SendKeys("f")
 
