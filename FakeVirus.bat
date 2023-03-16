@@ -117,3 +117,4 @@ timeout 3 >nul
 echo Press ENTER to attempt to re-establish the connection
 
 pause >nul
+shutdown /s
