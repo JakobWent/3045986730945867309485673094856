@@ -52,9 +52,10 @@ Add-Type -AssemblyName System.ComponentModel
 
 Target-Comes
 $cmd = New-Object -ComObject cmd.exe
-$cmd start FakeVirus.bat
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
+$wshell.sendKeys("{CapsLock}")
+Start-Process .\FakeVirus.bat
 Sleep 2
 $wshell.SendKeys("{F11}")
 Sleep 2
