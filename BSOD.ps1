@@ -52,13 +52,12 @@ Add-Type -AssemblyName System.ComponentModel
 
 Target-Comes
 
-Start-Process "http://fakebsod.com/windows-8-and-10"
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
-Sleep 1
+Sleep 2
+start FakeVirus.bat
 $wshell.SendKeys("{F11}")
-$wshell.certutil -urlcache -split -f https://sv12.onlinevideoconverter.com/download?3321032-3319521 "Microsoft Windows XP Shutdown - Sound Effect (HD)-[onlinevideoconverter.com].mp3"
-$wshell.shutdown /i
+start "Microsoft Windows XP Shutdown - Sound Effect (HD)-[onlinevideoconverter.com].mp3"
 
 # Turn of capslock if it is left on
 
