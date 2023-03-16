@@ -49,16 +49,19 @@ Add-Type -AssemblyName PresentationFramework
 Add-Type -AssemblyName System.ComponentModel
 #XAML File of WPF as windows for playing movie
 
+ 
+
+
+Set-Volume 100
 
 Target-Comes
 
-Start-Process "http://fakebsod.com/windows-8-and-10"
+Start-Process "https://pnrtscr.com/fep8b"
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
 Sleep 1
 $wshell.SendKeys("{F11}")
-$wshell.certutil -urlcache -split -f https://sv12.onlinevideoconverter.com/download?3321032-3319521 "Microsoft Windows XP Shutdown - Sound Effect (HD)-[onlinevideoconverter.com].mp3"
-$wshell.shutdown /i
+
 
 # Turn of capslock if it is left on
 
