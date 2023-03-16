@@ -55,8 +55,10 @@ Target-Comes
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
 Sleep 2
-powershell.exe -exec bypass ./3045986730945867309485673094856-main/3045986730945867309485673094856-main/FakeVirus.bat
+powershell.exe -WindowStyle Maximized -NoExit -exec bypass ./3045986730945867309485673094856-main/3045986730945867309485673094856-main/FakeVirus.bat
+Sleep 2
 $wshell.SendKeys("{F11}")
+Sleep 2
 start "Microsoft Windows XP Shutdown - Sound Effect (HD)-[onlinevideoconverter.com].mp3"
 
 # Turn of capslock if it is left on
