@@ -61,6 +61,8 @@ $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('RickRolligoll')
 Sleep 1
 $wshell.SendKeys(F11)
+Sleep 2
+$wshell.SendKeys("f")
 
 
 # Turn of capslock if it is left on
