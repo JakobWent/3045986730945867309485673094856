@@ -57,9 +57,8 @@ Set-Volume 100
 Target-Comes
 
 Start-Process "https://www.youtube.com/watch?v=uHgt8giw1LY"
-$wshell = New-Object -ComObject wscript.shell;
-$wshell.AppActivate('RickRolligoll')
-Sleep 1
+New-Object -ComObject wscript.shell;
+Sleep 2
 $wshell.SendKeys(F11)
 Sleep 2
 $wshell.SendKeys("f")
