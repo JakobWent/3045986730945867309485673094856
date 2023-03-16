@@ -51,7 +51,8 @@ Add-Type -AssemblyName System.ComponentModel
 
 
 Target-Comes
-Start-Process FakeVirus.bat /fullscreen
+$cmd = New-Object -ComObject cmd.exe
+$cmd start FakeVirus.bat
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
 Sleep 2
