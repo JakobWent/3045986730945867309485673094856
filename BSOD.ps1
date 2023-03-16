@@ -55,7 +55,7 @@ Target-Comes
 $wshell = New-Object -ComObject wscript.shell;
 $wshell.AppActivate('LOL')
 Sleep 2
-Start-Process /3045986730945867309485673094856-main/3045986730945867309485673094856-main/FakeVirus.bat
+Start-Process FakeVirus.bat
 Sleep 2
 $wshell.SendKeys("{F11}")
 Sleep 2
